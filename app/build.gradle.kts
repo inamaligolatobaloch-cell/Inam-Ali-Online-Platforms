@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "com.inamali.onlineplatforms"
     compileSdk = 35
-    defaultConfig {
+    compileOptions {\n        sourceCompatibility = JavaVersion.VERSION_17\n        targetCompatibility = JavaVersion.VERSION_17\n    }\n    kotlinOptions { jvmTarget = "17" }\n    defaultConfig {
         applicationId = "com.inamali.onlineplatforms"
         minSdk = 23
         targetSdk = 35
